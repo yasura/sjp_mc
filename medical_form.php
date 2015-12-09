@@ -6,15 +6,13 @@
 
 
         <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.css">
+        <link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet" media="screen">
         <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
         <!-- Optional theme -->
-        <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.css">
+        <link rel="stylesheet" href="libs/bootstrap/css/bootstrap-theme.css">
 
-        <script src="js/jquery-2.1.4.min.js"></script>
-        <!-- Latest compiled and minified JavaScript -->
-        <script src="libs/bootstrap/js/bootstrap.js"></script>
-
+      
     </head>
     <body>
         <div id="head-section">
@@ -593,65 +591,100 @@
                     <div role="tabpanel" class="tab-pane fade" id="section2f">
 
 
-                        <div class="form-wrapper">
+                        <div class="form-wrapper-2">
 
                             <h3>D. Vaccinations</h3>
-<br/><br/>
-
+                            <br/><br/>
+                            <p>Please specify date when you taken the vaccination.</p>
                             <form name="section2f" method="GET">
 
-                                <table>
-
-                                    <tr><th><strong>Vaccinations</strong></th><th>Date</th></tr>
-
-                                    <tr>
-                                        <td width="157px">BCG</td>
-                                        <td width="400px">
-                                            <div class="form-group">
-                                                <input type="text" name="bcg" id="bcg" class="form-control vacination"/>
-                                            </div>
-                                        </td>                                        
-
-                                    </tr>
-                                    <tr>
-                                        <td>OPV</td>
-                                        <td>
-                                            <div class="form-group">
-                                            <input type="text" name="opv" id="opv" class="form-control vacination"/>
-                                         </div>
-                                        </td>                                        
-                                    </tr>                                    
-                                    <tr>
-                                        <td>DPT</td>
-                                        <td><input type="text" name="dpt" id="dpt" class="vacination"/></td>                                        
-                                    </tr>                                    
-                                    <tr>
-                                        <td>Measles</td>
-                                        <td><input type="text" name="measles" id="measles" class="vacination"/></td>                                        
-                                    </tr>                                      
-                                    <tr>
-                                        <td>MR/MMR</td>
-                                        <td><input type="text" name="mmr" id="mmr" class="vacination"/></td>                                        
-                                    </tr>  
-                                    <tr>
-                                        <td>PT/ADT/TT</td>
-                                        <td><input type="text" name="adt" id="adt" class="vacination"/></td>                                        
-                                    </tr>                                      
-                                    <tr>
-                                        <td>Rubella</td>
-                                        <td><input type="text" name="rubella" id="rubella" class="vacination"/></td>                                        
-                                    </tr>                                      
-                                    <tr>
-                                        <td>Hepatitis B</td>
-                                        <td><input type="text" name="hepatitis" id="hepatitis" class="vacination"/></td>                                        
-                                    </tr>                                      
-                                    <tr>
-                                        <td>Chickenpox</td>
-                                        <td><input type="text" name="chickenpox" id="chickenpox" class="vacination"/></td>                                        
-                                    </tr>                                      
 
 
-                                </table>
+                                <div class="form-group">
+                                    <label for="dtp_input2" class="col-md-2 control-label">BCG</label>
+                                    <div class="input-group date form_date col-md-6" data-date="" data-date-format="dd MM yyyy" data-link-field="dtp_input1" data-link-format="yyyy-mm-dd">
+                                        <input class="form-control" size="16"  type="text" value="" readonly>
+                                        <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
+                                        <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+                                    </div>
+                                    <input type="hidden" id="dtp_input1" name="bcg" value="" /><br/>
+                                </div>         
+
+                                <div class="form-group">
+                                    <label for="dtp_input2" class="col-md-2 control-label">OPV</label>
+                                    <div class="input-group date form_date col-md-6" data-date="" data-date-format="dd MM yyyy" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
+                                        <input class="form-control" size="16"  type="text" value="" readonly>
+                                        <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
+                                        <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+                                    </div>
+                                    <input type="hidden" id="dtp_input2" name="OPV" value="" /><br/>
+                                </div>
+                                <div class="form-group">
+                                    <label for="dtp_input2" class="col-md-2 control-label">DPT</label>
+                                    <div class="input-group date form_date col-md-6" data-date="" data-date-format="dd MM yyyy" data-link-field="dtp_input3" data-link-format="yyyy-mm-dd">
+                                        <input class="form-control" size="16"  type="text" value="" readonly>
+                                        <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
+                                        <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+                                    </div>
+                                    <input type="hidden" id="dtp_input3" name="dpt" value="" /><br/>
+                                </div>
+                                <div class="form-group">
+                                    <label for="dtp_input2" class="col-md-2 control-label">Measles</label>
+                                    <div class="input-group date form_date col-md-6" data-date="" data-date-format="dd MM yyyy" data-link-field="dtp_input4" data-link-format="yyyy-mm-dd">
+                                        <input class="form-control" size="16"  type="text" value="" readonly>
+                                        <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
+                                        <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+                                    </div>
+                                    <input type="hidden" id="dtp_input4" name="measles" value="" /><br/>
+                                </div>
+                                <div class="form-group">
+                                    <label for="dtp_input2" class="col-md-2 control-label">MR/MMR</label>
+                                    <div class="input-group date form_date col-md-6" data-date="" data-date-format="dd MM yyyy" data-link-field="dtp_input5" data-link-format="yyyy-mm-dd">
+                                        <input class="form-control" size="16"  type="text" value="" readonly>
+                                        <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
+                                        <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+                                    </div>
+                                    <input type="hidden" id="dtp_input5" name="mmr" value="" /><br/>
+                                </div>  
+                                <div class="form-group">
+                                    <label for="dtp_input2" class="col-md-2 control-label">PT/ADT/TT</label>
+                                    <div class="input-group date form_date col-md-6" data-date="" data-date-format="dd MM yyyy" data-link-field="dtp_input6" data-link-format="yyyy-mm-dd">
+                                        <input class="form-control" size="16"  type="text" value="" readonly>
+                                        <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
+                                        <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+                                    </div>
+                                    <input type="hidden" id="dtp_input6" name="adt" value="" /><br/>
+                                </div>
+                                <div class="form-group">
+                                    <label for="dtp_input2" class="col-md-2 control-label">Rubella</label>
+                                    <div class="input-group date form_date col-md-6" data-date="" data-date-format="dd MM yyyy" data-link-field="dtp_input7" data-link-format="yyyy-mm-dd">
+                                        <input class="form-control" size="16"  type="text" value="" readonly>
+                                        <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
+                                        <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+                                    </div>
+                                    <input type="hidden" id="dtp_input7" name="rubella" value="" /><br/>
+                                </div>                                
+                                <div class="form-group">
+                                    <label for="dtp_input2" class="col-md-2 control-label">Hepatitis B</label>
+                                    <div class="input-group date form_date col-md-6" data-date="" data-date-format="dd MM yyyy" data-link-field="dtp_input8" data-link-format="yyyy-mm-dd">
+                                        <input class="form-control" size="16"  type="text" value="" readonly>
+                                        <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
+                                        <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+                                    </div>
+                                    <input type="hidden" id="dtp_input8" name="hepatitis" value="" /><br/>
+                                </div>                                     
+                                <div class="form-group">
+                                    <label for="dtp_input2" class="col-md-2 control-label">Chickenpox</label>
+                                    <div class="input-group date form_date col-md-6" data-date="" data-date-format="dd MM yyyy" data-link-field="dtp_input9" data-link-format="yyyy-mm-dd">
+                                        <input class="form-control" size="16"  type="text" value="" readonly>
+                                        <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
+                                        <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+                                    </div>
+                                    <input type="hidden" id="dtp_input9" name="chickenpox" value="" /><br/>
+                                </div>              
+                               
+                                     
+
 
                                 <button style="float: right;" type="submit" class="btn btn-default">Save</button>
 
@@ -670,5 +703,31 @@
             </div>
         </div>
 
+        
+        
+        
+        
+        
+          <script src="js/jquery-2.1.4.min.js"></script>
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="libs/bootstrap/js/bootstrap.js"></script>
+        <script type="text/javascript" src="js/bootstrap-datetimepicker.js" charset="UTF-8"></script>
+        <script type="text/javascript">
+
+            $('.form_date').datetimepicker({
+                language: 'fr',
+                weekStart: 1,
+                todayBtn: 1,
+                autoclose: 1,
+                todayHighlight: 1,
+                startView: 2,
+                minView: 2,
+                forceParse: 0
+            });
+
+        </script>
+        
+        
+        
     </body>
 </html>

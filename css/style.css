@@ -1,6 +1,10 @@
 
-
-
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700,700italic,900);
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+body{
+    
+    font-family: 'Montserrat', sans-serif;
+}
 
 #head-section{
     width: 100%;
@@ -15,7 +19,8 @@
     margin: auto;
     max-width: 750px;
 }
-
-table{
-    column-width: 300px;
+.form-wrapper-2{
+    margin: auto;
+    max-width: 750px;
 }
+
